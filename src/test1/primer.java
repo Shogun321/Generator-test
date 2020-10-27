@@ -3,6 +3,7 @@ package test1;
 import org.jfugue.pattern.Pattern;
 import org.jfugue.player.Player;
 
+
 public class primer {
     public primer() {
         org.jfugue.pattern.Pattern pattern = new Pattern("T[Allegro]");
@@ -11,5 +12,6 @@ public class primer {
 
         Player player = new Player();
         player.play(pattern);
+
     }
 }
