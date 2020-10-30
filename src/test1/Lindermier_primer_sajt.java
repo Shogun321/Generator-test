@@ -29,11 +29,17 @@ public class Lindermier_primer_sajt {
         rmp.setRequireAngleBrackets(false);
 
         // Create a Pattern that contains the L-System axiom
-        Pattern axiom = new Pattern("T120 " + "V0 I[Flute] Rq C5q "
+        /*Pattern axiom = new Pattern("T120 " + "V0 I[Flute] Rq C5q "
                 + "V1 I[Tubular_Bells] Rq Rq Rq G6i+D6i "
                 + "V2 I[Piano] Cmajw E6q "
                 + "V3 I[Warm] E6q G6i+D6i "
                 + "V4 I[Voice] C5q E6q");
+        */
+        Pattern axiom = new Pattern("T120 " + "V0 I[Flute] C5q "
+                + "V1 I[Tubular_Bells] G6i+D6i "
+                + "V2 I[Piano] E6q "
+                + "V3 I[Warm] G6i+D6i "
+                + "V4 I[Voice] E6q C5q Bbmajw Rq Rq Fmajw");
 
         Player player = new Player();
         System.out.println(rmp.preprocess(axiom.toString(), null));
